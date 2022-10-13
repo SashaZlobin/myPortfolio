@@ -1,0 +1,102 @@
+:root {
+    --black: #000;
+    --grey: #5C5C5C;
+    --link: #378dcc;
+}
+
+body {
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    background-image: url('../images/background-new.jpg');
+    background-size: cover;
+}
+
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 28px;
+    color: var(--black);
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.button {
+    position: absolute;
+    z-index: 0;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all, .9s;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #BFE2FF;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(#5C5C5C, #5C5C5C), linear-gradient(#fff, #fff), linear-gradient(#5C5C5C, #5C5C5C);
+    animation: anim-ramka-5 7s linear infinite;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 3px;
+    top: 3px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background: white;
+    border-radius: 5px;
+}
+
+.button:hover {
+    border: 2px solid #5C5C5C;
+    font-size: 17px;
+    animation: none;
+}
+
+
+@keyframes anim-ramka-5 {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+
+.about,
+.skils,
+.sites,
+.question,
+.feedback,
+.notes,
+.reviews {
+    margin-bottom: 100px;
+
+}

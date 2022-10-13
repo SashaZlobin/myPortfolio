@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__about">
+                    <a class="logo" href="#about">
+                        <img class="logo__img" src="images/logo.png" alt="">
+                    </a>
+                    <ul class="header__menu">
+                        <li class="header__list">
+                            <a class="header__link" href="#question">Вопрос ответ</a>
+                        </li>
+                        <li class="header__list">
+                            <a class="header__link" href="#reviews">Отзывы</a>
+                        </li>
+                        <li class="header__list">
+                            <a class="header__link" href="#feedback">Оставить заявку</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__navigation">
+                    <div class="header__icons">
+                        <a class="header__social" href="mailto:sasha_zlobin@ukr.net">
+                            <svg>
+                                <use xlink:href="images/sprite.svg#mail"></use>
+                            </svg>
+                        </a>
+                        <a class="header__social" href="https://t.me/alexzlb" target="_blank">
+                            <svg>
+                                <use xlink:href="images/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                        <a class="header__social" href="https://instagram.com/a.zlobin__?utm_medium=copy_link"
+                            target="_blank">
+                            <svg>
+                                <use xlink:href="images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="header__btn" id="pop_up" onclick="active()" href="#pop_up">Написать</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <img class="header__bg" src="images/Kiev_1920_2.jpg" alt="">
+
+    <main class="main">
+        <div class="container">
+            <div class="main__inner">
+                <aside class="aside">
+                    <div class="aside__me">
+                        <img class="aside__img" src="images/about-me.jpg" alt="">
+                        <div class="aside__about">
+                            <h2 class="aside__name">Алксандр Злобин</h2>
+                            <h5 class="aside__work">Front-end Developer</h5>
+                            <span class="aside__lacation">Ukrain, Kyiv</span>
+                        </div>
+                    </div>
+                    <ul class="aside__progress">
+                        <li class="aside__progress-item">4.8 <span>Рейтинг</span></li>
+                        <li class="aside__progress-item">214 <span>Лайков</span></li>
+                        <li class="aside__progress-item">312 <span>Проектов</span></li>
+                        <li class="aside__progress-item">$1-3K <span>Догод</span></li>
+                    </ul>
+                    <div class="aside__button">
+                        <a class="button aside__btn" id="pop_up" onclick="active()" href="#pop_up">Написать</a>
+                    </div>
+                    <div class="aside__adout-me">
+                        <h4 class="aside__about-me-title">Про меня</h4>
+                        <p class="aside__about-me-text">
+                            Инженер по образованию. Учусь в Киевском Политехническом Институте. Создаю сайты с нуля,
+                            обезпечиваю круглосуточную поддержку Вашего сайта. Я
+                            разрабатывал и запускал несколько проектов с нуля, занимаясь разработкой его
+                            внутренних и внешних кодовых баз
+                        </p>
+                    </div>
+                    <div class="aside__contact">
+                        <h3 class="aside__contact-title">Контакты:</h3>
+                        <div class="aside__number">
+                            <a class="aside__social aside__phone" href="tel:+380666254540">+38 (066) 625 45 40</a>
+                            <a class="aside__social aside__mail" href="">sasha_zlobin@ukr.net</a>
+                            <a class="aside__social aside__inst"
+                                href="https://instagram.com/a.zlobin__?utm_medium=copy_link"
+                                target="_blank">a.zlobin__</a>
+                            <a class="aside__social aside__telegram" href="https://t.me/alexzl"
+                                target="_blank">@alex__zlb</a>
+                        </div>
+                    </div>
+
+                </aside>
+                <div class="global-content">
+                    <section id="about" class="about">
+                        <h2 class="title about__title">Обо мне</h2>
+                        <div class="about__wrapper">
+                            <img class="about__img" src="images/about-me.jpg" alt="" data-aos="fade-up"
+                                data-aos-duration="2000">
+                            <div class="about__text" data-aos="fade-up" data-aos-duration="2000">
+                                <p>
+                                    Доброго времени суток, меня зовут Злобин Александр. Я самозанятый верстальщик.
+                                    Занимаюсь web-разработкой с
+                                    нуля,под
+                                    ключ.
+
+                                </p>
+                                <p>
+                                    Выполняю верстку и программированием сайтов,а так же доработку, добавляя полный
+                                    функционал
+                                    на
+                                    сайт! Использую методологию БЭМ, забочусь о скорости загрузки, отображении в
+                                    браузерах
+                                    на десктопах и на мобильных устройствах.
+                                </p>
+                                <p>
+                                    Верстаю адаптивную верстку, таким образом сайт
+                                    получается
+                                    красивым
+                                    на любом устройстве, будь то комьютер, ноутбук или телефон!
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="skils" class="skils">
+                        <h2 class="title skils__title">Професиональные навыки</h2>
+                        <ul class="skils__menu">
+                            <li class="skils__item">
+                                HTML
+                                <p class="skils__persent skils__persent-html">
+                                    <span>99%</span>
+                                </p>
+                            </li>
+                            <li class="skils__item">
+                                CSS
+                                <p class="skils__persent skils__persent-css">
+                                    <span>90%</span>
+                                </p>
+                            </li>
+                            <li class="skils__item">
+                                JS
+                                <p class="skils__persent skils__persent-js">
+                                    <span>55%</span>
+                                </p>
+                            </li>
+                            <li class="skils__item">
+                                Figma
+                                <p class="skils__persent skils__persent-figma">
+                                    <span>85%</span>
+                                </p>
+                            </li>
+                        </ul>
+                        <h4 class="skills__others-title">Технологии которые использую при роботе:</h4>
+                        <ul class="skills__others">
+                            <li class="skills__others-item">HTML5/CSS3</li>
+                            <li class="skills__others-item">Pixel Perfect, Mobile First, БЭМ</li>
+                            <li class="skills__others-item">Jquery, JS(Базовые навыки)</li>
+                            <li class="skills__others-item">Git, Gulp, SCSS,Less</li>
+                            <li class="skills__others-item">Figma,Psd</li>
+                        </ul>
+                    </section>
+
+                    <section id="sites" class="sites">
+                        <h2 class="title sites__title ">Виды
+                            сайтов</h2>
+                        <ul class=" sites__menu">
+                            <li class="sites__item">
+                                <div class="sites__item-front">
+                                    <img class="sites__img" src="images/landing.png" alt="">
+                                    <h3 class="sites__subtitle">Landing page</h3>
+                                    <p class="sites__text">Одностраничный сайт цель которого является максимальная
+                                        конвертация с обычного посетителя сайта на постоянного клиента</p>
+                                </div>
+                                <div class="sites__item-back">
+                                    <p class="sites__item-back-price">ОТ 100$</p>
+                                    <a class="button sites__back-btn" href="">Подать заявку</a>
+                                </div>
+                            </li>
+                            <li class="sites__item sites__item-two">
+                                <div class="sites__item-front">
+                                    <img class="sites__img" src="images/corporativ.png" alt="">
+                                    <h3 class="sites__subtitle">Корпоративный сайт</h3>
+                                    <p class="sites__text">Небольшой сайт, который состоит из нескольких страниц с общей
+                                        информацией о компании, предоставляемых услугах и контактной информации</p>
+                                </div>
+                                <div class="sites__item-back">
+                                    <p class="sites__item-back-price">ОТ 100$</p>
+                                    <a class="button sites__back-btn" href="">Подать заявку</a>
+                                </div>
+                            </li>
+                            <li class="sites__item sites__item-three">
+                                <div class="sites__item-front">
+                                    <img class="sites__img" src="images/internet-shop.png" alt="">
+                                    <h3 class="sites__subtitle">Интернет магазин</h3>
+                                    <p class="sites__text">Веб-продукт, который эффективно презентует услуги или товары.
+                                        Цель такого сайта-привлечение новых клиентов.</p>
+                                </div>
+                                <div class="sites__item-back">
+                                    <p class="sites__item-back-price">ОТ 100$</p>
+                                    <a class="button sites__back-btn" href="">Подать заявку</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="question" class="question">
+                        <h2 class="title question__title">Вопросы и ответы</h2>
+                        <div class="question__acardion">
+                            <div class="question__link" data-aos="fade-left" data-aos-duration="2000">Какой порядок
+                                работ по созданию сайта?</div>
+                            <ul class="question__box">
+                                <li class="question__item">1. Вы оставляете заявку</li>
+                                <li class="question__item">2. Осуществляем предварительную оценку проекта и сроки</li>
+                                <li class="question__item">3. Заключаем официальный договор</li>
+                                <li class="question__item">4. Вносится предоплата 50%</li>
+                                <li class="question__item">5. Приступаем к разработке</li>
+                                <li class="question__item">6. Реализуем проект, тестируем</li>
+                                <li class="question__item">7. Сопровождаем проект после запуска</li>
+                            </ul>
+                            <div class="question__link" data-aos="fade-left" data-aos-duration="1600">Какие сроки
+                                разработки?</div>
+                            <div class="question__box">
+                                Среднее время разработки сайта под ключ составляет 2 недели. Одностраничный сайт можно
+                                разработать за 5 рабочих дней.
+                            </div>
+                            <div class="question__link" data-aos="fade-left" data-aos-duration="1400">Будет ли сайт
+                                адаптивным?</div>
+                            <div class="question__box">
+                                Обязательно 🙂 Все создаваемые сайты полностью адаптивны, а значит, их удобно
+                                использовать на любом устройстве (ПК, смартфон, планшет).
+                            </div>
+                            <div class="question__link" data-aos="fade-left" data-aos-duration="1000">Есть поддержка
+                                сайта? </div>
+                            <div class="question__box">
+                                Да, мы предоставляем бесплатную техническую поддержку после сдачи проекта.
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="reviews" id="reviews">
+                        <div class="container">
+                            <h2 class="title reviews__title">Отзывы клиентов</h2>
+                            <div class="reviews__inner">
+                                <div class="reviews__box">
+                                    <img class="reviews__img" src="images/photo_2021-12-22_10-53-28.jpg" alt="">
+                                    <h5 class="reviews__name">Владимир</h5>
+                                </div>
+                                <div class="reviews__box">
+                                    <img class="reviews__img" src="images/photo_2021-12-22_10-53-28.jpg" alt="">
+                                    <h5 class="reviews__name">Владимир</h5>
+                                </div>
+                                <div class="reviews__box">
+                                    <img class="reviews__img" src="images/photo_2021-12-22_10-53-28.jpg" alt="">
+                                    <h5 class="reviews__name">Владимир</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="feedback" class="feedback" data-aos-delay="300" data-aos-delay="300"
+                        data-aos="fade-down" data-aos-duration="1400">
+                        <h2 class="title feedback__title">Оставить заявку</h2>
+                        <form class="feedback__form" action="">
+                            <div class="feedbak__inputs">
+                                <input class="input feedback__name" placeholder="Ваше имя" type="text">
+                                <input class="input feedbak__phone" placeholder="Ваш телефон" type="text">
+                                <input class="input feedbak__mail" placeholder="Ваша почта" type="text">
+                            </div>
+                            <textarea class="feedback__textarea" placeholder="Коментраии" name="" id="" cols="30"
+                                rows="10"></textarea>
+                        </form>
+                        <div class="feedback__button">
+                            <button class="feedback__btn">Оставить заявку</button>
+                        </div>
+                    </section>
+
+                    <section id="notes" class="notes">
+                        <h2 class="title notes__title">Мои заметки</h2>
+                        <div class="notes__inner">
+                            <div class=" notes__box" data-aos="fade-right" data-aos-duration="2200">
+                                <a class="notes__photo" href="Favikon.html">
+                                    <img class="notes__ing" src="images/notes/fafikon.jpg" alt="">
+                                </a>
+                                <a class="notes__subtitle" href="Favikon.html">Как сделать фавикон для Safari</a>
+                                <p class="notes__text">
+                                    В процессе работы я столкнулась с довольно простой задачей — как сделать, чтобы в
+                                    мобильной версии браузера Safari корректно отображался фавикон. Я делала сайт на
+                                    WordPress, загрузила нужное мне изображение через админку, все сохранила, но
+                                </p>
+                            </div>
+                            <div class="notes__box" data-aos="fade-left" data-aos-duration="2400">
+                                <a class="notes__photo" href="spam.html">
+                                    <img class="notes__ing" src="images/notes/spa.jpeg" alt="">
+                                </a>
+                                <a class="notes__subtitle" href="spam.html">Борьба со спамом</a>
+                                <p class="notes__text">
+                                    Огромный поток спама в комментариях очень утомляет. Каждый день приходится разбирать
+                                    сотни спам-сообщений, чтобы найти среди них «хорошие» записи. Большинство роботов,
+                                    при рассылке спама, заполняют все поля формы перед ее отправкой.
+                                </p>
+                            </div>
+                            <div class="notes__box" data-aos="fade-right" data-aos-duration="1600">
+                                <a class="notes__photo" href="">
+                                    <img class="notes__ing" src="images/notes/resurs.jpg" alt="">
+                                </a>
+                                <a class="notes__subtitle" href="">Полезные ресурсы</a>
+                                <p class="notes__text">
+                                    Хочу поделиться ресурсами, которые пригодятся в начале изучения веб-разработки, а
+                                    также теми, которые использую в работе сама. HTML http://htmlbook.ru — начинать
+                                    изучение языка гипертекстовой разметки советую с этого сайта. Здесь содержится
+                                    описание тегов и примеры
+                                </p>
+                            </div>
+                            <div class="notes__box" data-aos="fade-left" data-aos-duration="1800">
+                                <a class="notes__photo" href="">
+                                    <img class="notes__ing" src="images/notes/time.jpg" alt="">
+                                </a>
+                                <a class="notes__subtitle" href="">Преобразование времени</a>
+                                <p class="notes__text">
+                                    Когда нас спрашивают на улице «который час», мы обычно отвечаем «половина восьмого»
+                                    или «двадцать минут первого», вместо формального «девятнадцать часов и тридцать
+                                    минут».
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="pop_up" id="pop_up">
+        <div class="pop_up_container">
+            <div class="pop_up_body">
+                <p class="pop_up_text">Оставить заявку</p>
+                <form action="" class="pop_up-form">
+                    <input type="text" class="pop_up_input" placeholder="Имя">
+                    <input type="text" class="pop_up_input" placeholder="Телефон">
+                    <button class="pop_up_btn">Оставить заявку</button>
+                </form>
+                <div class="pop_ip_close">&#10006</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="modal" id="modal">
+        <div class="container">
+            <div class="modal__box">
+                <h2 class="modal__title">ЗаявкаЗаявкаЗаявкаЗаявкаЗаявкаЗаявка</h2>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
